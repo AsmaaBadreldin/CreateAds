@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiscoverCollectionViewCell" id="gTV-IL-0wX" customClass="DiscoverCollectionViewCell" customModule="Free_Ads" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="325"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="325"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmn-hc-RKT">
+                        <rect key="frame" x="5" y="10" width="407" height="305"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="y61-dT-xec">
+                                <rect key="frame" x="183.66666666666666" y="5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RVb-JI-CQP"/>
+                                    <constraint firstAttribute="width" constant="40" id="jqF-gh-59W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amr Salama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPq-u5-pWD">
+                                <rect key="frame" x="167.33333333333334" y="50" width="72.333333333333343" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVh-Uc-fe1">
+                                <rect key="frame" x="164.66666666666666" y="69.333333333333329" width="77.666666666666657" height="15.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.72156862745098038" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="follow" translatesAutoresizingMaskIntoConstraints="NO" id="DWl-x2-2bv">
+                                <rect key="frame" x="143.66666666666666" y="95" width="119.99999999999997" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gYq-9d-RHN"/>
+                                    <constraint firstAttribute="width" constant="120" id="oXN-SS-yZ3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DWl-x2-2bv" firstAttribute="top" secondItem="EVh-Uc-fe1" secondAttribute="bottom" constant="10" id="7Hb-aG-HGn"/>
+                            <constraint firstItem="EVh-Uc-fe1" firstAttribute="top" secondItem="JPq-u5-pWD" secondAttribute="bottom" constant="5" id="Cit-fk-5Hp"/>
+                            <constraint firstItem="JPq-u5-pWD" firstAttribute="centerX" secondItem="Zmn-hc-RKT" secondAttribute="centerX" id="Eu7-zS-GWh"/>
+                            <constraint firstItem="DWl-x2-2bv" firstAttribute="centerX" secondItem="Zmn-hc-RKT" secondAttribute="centerX" id="GyH-2h-1Vb"/>
+                            <constraint firstItem="JPq-u5-pWD" firstAttribute="top" secondItem="y61-dT-xec" secondAttribute="bottom" constant="5" id="Jp9-Zl-5Jk"/>
+                            <constraint firstItem="y61-dT-xec" firstAttribute="top" secondItem="Zmn-hc-RKT" secondAttribute="top" constant="5" id="fIQ-AQ-7S6"/>
+                            <constraint firstItem="y61-dT-xec" firstAttribute="centerX" secondItem="Zmn-hc-RKT" secondAttribute="centerX" id="gdc-F1-SxC"/>
+                            <constraint firstItem="EVh-Uc-fe1" firstAttribute="centerX" secondItem="Zmn-hc-RKT" secondAttribute="centerX" id="v5a-IJ-FTV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zmn-hc-RKT" secondAttribute="trailing" constant="5" id="HT2-iW-oP2"/>
+                <constraint firstItem="Zmn-hc-RKT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Kf2-Pq-qG5"/>
+                <constraint firstItem="Zmn-hc-RKT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="nbp-DC-JgD"/>
+                <constraint firstAttribute="bottom" secondItem="Zmn-hc-RKT" secondAttribute="bottom" constant="10" id="oYX-RP-wFa"/>
+            </constraints>
+            <size key="customSize" width="417" height="325"/>
+            <connections>
+                <outlet property="containerView" destination="Zmn-hc-RKT" id="MiR-7O-ELE"/>
+            </connections>
+            <point key="canvasLocation" x="1025.1908396946565" y="147.53521126760563"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="follow" width="28.666666030883789" height="16"/>
+        <image name="person" width="58" height="58.333332061767578"/>
+    </resources>
+</document>
